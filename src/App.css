@@ -4,3 +4,8 @@
     place-items: center;
     height: 100vh;
 }
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

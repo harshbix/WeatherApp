@@ -1,7 +1,9 @@
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div>navbar</div>
+    <div>
+        <a className="bi bi-three-dots-vertical text-white"></a>
+    </div>
   )
 }
 
-export default navbar
+export default Navbar
