@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const App = () => {
   return (
-    <div className='container'>
+    <div className='container box'>
       App
     </div>
   )
