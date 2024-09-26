@@ -1,23 +1,29 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import Navbar from "./components/Navbar";
-import LocDetails from "./components/LocDetails";
-import ConditionIcon from "./components/ConditionIcon";
-import Temparure from "./components/Temparure";
-import Footer from "./components/Footer";
+// src/App.tsx
+import React from 'react';
+import WeatherCard from './components/WeatherCard';
+import './style.css';
 
-
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="container box">
-      <div className="box-child bg-success p-3 rounded text-white">
-        <Navbar />
-        <LocDetails />
-        <ConditionIcon />
-        <Temparure />
-        <Footer />
-      </div>
+    <div className="app">
+      <WeatherCard
+        city="Karachi"
+        time="Monday 7:00 AM"
+        temperature={22}
+        windSpeed={4}
+        sunrise="7:00 AM"
+        sunset="7:00 PM"
+        theme="day" // Switch this to 'night' for the night theme
+      />
+      <WeatherCard
+        city="Karachi"
+        time="Monday 7:30 PM"
+        temperature={20}
+        windSpeed={4}
+        sunrise="7:00 AM"
+        sunset="7:00 PM"
+        theme="night"
+      />
     </div>
   );
 };

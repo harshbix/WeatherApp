@@ -1,0 +1,59 @@
+/* src/style.css */
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .weather-card {
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-card.day {
+    background-color: #e3f2fd;
+    color: #000;
+  }
+  
+  .weather-card.night {
+    background-color: #263238;
+    color: #fff;
+  }
+  
+  .weather-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .weather-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .weather-info h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  
+  .weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .weather-details .detail p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
